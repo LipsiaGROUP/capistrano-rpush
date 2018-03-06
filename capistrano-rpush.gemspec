@@ -24,7 +24,7 @@ Gem::Specification.new do |spec|
     'issue_tracker' => 'https://github.com/juicyparts/capistrano-rpush/issues',
   }
 
-  spec.add_dependency 'capistrano', '~> 3.9', '>= 3.9.1'
+  spec.add_dependency 'capistrano', '~> 3.6', '>= 3.6.0'
   spec.add_dependency 'rpush', '>= 2.7'
 
   spec.add_development_dependency 'bundler', '~> 1.15'
