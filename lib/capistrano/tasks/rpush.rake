@@ -34,7 +34,7 @@ namespace :rpush do
         end
         within current_path do
           with rack_env: fetch(:rpush_env) do
-            exec "RBENV_ROOT=$HOME/.rbenv RBENV_VERSION=2.3.6 /usr/bin/rbenv exec bundle exec rpush start -p #{fetch(:rpush_pid)} -c #{fetch(:rpush_conf)} -e #{fetch(:rpush_env)}"
+            execute :rpush, "start -p #{fetch(:rpush_pid)} -c #{fetch(:rpush_conf)} -e #{fetch(:rpush_env)}"
           end
         end
       end
